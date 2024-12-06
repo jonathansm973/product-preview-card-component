@@ -1,0 +1,197 @@
+:root{
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 12px;
+}
+
+body{
+
+
+    font-family: "Fraunces", serif;
+    background-color: var(--Cream);
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.perfume{
+
+    width: 90%;
+    border-radius: 10px;
+
+}
+
+.perfume_contenedor{
+
+  
+    height: auto;    
+    background-color: var(--White);
+    border-radius: 10px;
+}
+
+
+.perfume_img{
+
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.perfume_texto{
+
+    padding: 12px 18px 20px 18px ;
+    
+}
+
+.perfume_sub{
+
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: .5rem;
+}
+
+.item{
+
+    font-family: "Montserrat", sans-serif;
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+
+}
+
+.perfume_titulo{
+
+    color: var(--Very-dark-blue);
+    font-size: 2rem;
+}
+
+.perfume_des{
+
+    margin: 10px 0;
+}
+
+.perfume_costo{
+
+    display: flex;
+
+}
+
+.perfume_costo >*{
+
+    width: 100%;
+    margin-right: auto;
+}
+
+.perfume_precio{
+
+    color: var(--Dark-cyan);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.perfume_precio2{
+
+    display: flex;
+    align-items: center;
+    text-decoration: line-through;
+}
+
+.perfume_boton{
+    
+
+    background-color: var(--Dark-cyan);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+
+}
+
+.perfume_boton:hover{
+
+    background-color:rgb(22, 70, 9);
+}
+
+.perfume_carrito{
+
+    color: var(--White);
+    text-decoration: none;
+    margin-left: 10px;
+ 
+}
+
+@media(min-width:768px){
+
+
+    body{
+
+        min-height: 500px;
+        width: 550px;
+        margin: 0 auto;
+   
+    }
+
+    .perfume_contenedor{
+
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+
+    }
+
+
+    .perfume_img{
+
+        border-radius: 10px 0 0 10px;
+        display: block;
+        width: 230px;
+
+    }
+
+    .perfume_texto{
+
+        padding-top: 20px;
+
+    }
+    .perfume_titulo{
+
+        font-size: 2.2rem;
+    }
+
+    .perfume_des{
+
+        padding: 5px 0;
+
+    }
+
+    .perfume_costo>*{
+
+        margin-right: 10px;
+    }
+
+    .perfume_boton{
+
+        margin-top: 15px;
+    }
+
+
+}
+
+
